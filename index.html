@@ -3,7 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Perlon Straps Australia | Style &bull; Fashion</title>
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http:////maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+
+	<style>
+	body{
+		font-family: 'Oswald', sans-serif;
+		text-align:center;
+		font-size:2em;
+		text-transform:uppercase;
+	}
+	h1{
+		margin-top:5em;
+	}
+	#instafeed{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		opacity:0.1;
+	}
+	</style>
 </head>
 <body>
 	<script>
@@ -15,22 +37,30 @@
 	  ga('create', 'UA-70991009-1', 'auto');
 	  ga('send', 'pageview');
 	</script>
+
+	<div id="instafeed">
+	</div>
+			
 	<div class="container">
 		<div class="col-md-12">
-			<h1>Perlon watch straps</h1>
-			<p>Supplier of premium perlon watch straps in Australia.</p>
-			<p><em>Website coming soon</em></p>
+			<h1>Perlon watch straps Australia</h1>
+			<p>We are a supplier of premium perlon (knitted plastic) watch straps in Australia.</p>
+			<p><em>&bull; Website coming soon &bull;</em></p>
 		</div>
 	</div>
 
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script src="/js/instafeed.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+	<script src="http:////maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/instafeed.min.js"></script>
 	<script type="text/javascript">
 	    var feed = new Instafeed({
 	        get: 'tagged',
 	        tagName: 'perlonstrap',
 	        clientId: '98259fa77b914cb582ee9d09301f6fb6',
-	        template: '<img src="{{image}}" class="pull-left" />'
+	        template: '<img src="{{image}}" class="pull-left" width="{{width}}" height="{{height}}" />',
+	        resolution : 'low_resolution',
+	        limit : 100
 	    });
 	    feed.run();
 	</script>
