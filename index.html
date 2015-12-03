@@ -24,5 +24,16 @@
 	</div>
 
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="/js/instafeed.min.js"></script>
+	<script type="text/javascript">
+	    var feed = new Instafeed({
+	        get: 'tagged',
+	        tagName: 'perlonstrap',
+	        clientId: '98259fa77b914cb582ee9d09301f6fb6',
+	        template: '<img src="{{image}}" class="pull-left" />'
+	    });
+	    feed.run();
+	</script>
+	      
 </body>
 </html>
